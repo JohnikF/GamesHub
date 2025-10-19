@@ -1,0 +1,84 @@
+.main-container {
+    background-image: linear-gradient(45deg,  #fabeff, rgba(129, 111, 255, 0.62));
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main-header {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+/*    transform: translateY( 300px) scale(1) skew(360deg) rotate(135deg);   */
+    transform: translateY(300px);
+}
+
+.main-btn {
+    display: inline-block;
+    transform: translateY(400px);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.main-btn:hover {
+    transform: translateY(400px) scale(2);
+    transition: 1s;
+    box-shadow: 0 0 10px #e600ff;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.my {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.games {
+    display: inline-block;
+    animation-delay: 0.5s;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.hub {
+    animation-delay: 1s;
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #e600ff;
+    }
+    50% {
+        box-shadow: 0 0 50px #e600ff;
+    }
+    100% {
+        box-shadow: 0 0 10px #e600ff;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
